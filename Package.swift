@@ -3,13 +3,12 @@
 import PackageDescription
 
 let package = Package(
-	name: "libgit2",
+	name: "Libssh2",
 	platforms: [.iOS(.v12)],
 	products: [
 		.library(
-			name: "libgit2",
+			name: "Libssh2",
 			targets: [
-				"libgit2",
 				"libssh2",
 				"libssl",
 				"libcrypto"
@@ -18,11 +17,6 @@ let package = Package(
 	],
 	dependencies: [],
 	targets: [
-		.binaryTarget(
-			name: "libgit2",
-			url: "https://github.com/mfcollins3/libgit2-ios/releases/download/1.5.0/libgit2.zip",
-			checksum: "cb06393e43fe89496fa154e661ecf5218c5fd483f6b719720b8b9c6a88f263a6"
-		),
 		.binaryTarget(
 			name: "libssh2",
 			url: "https://github.com/mfcollins3/libgit2-ios/releases/download/1.5.0/libssh2.zip",
